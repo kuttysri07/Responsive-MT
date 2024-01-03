@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url("images/black.webp");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 700px 100px;
+    box-sizing: border-box;
+    padding: 20px 10%;
+    transition: background-image 0.3s;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav img{
+    height: 80px;
+}
+
+nav .btn{
+    text-decoration: none;
+    color: white;
+    background:black;
+    padding: 10px 50px ;
+    border-radius: 20px;
+}
+
+.content h2{
+    color: red;
+    padding-top: 100px;
+    font-weight:500;
+    
+}
+
+.content h1{
+    padding-top: 20px;
+    font-size: 70px;
+    font-weight: 900;
+   
+}
+
+.content p{
+    padding-top: 20px;
+    width: 600px;
+}
+
+h3{
+    padding-top: 50px;
+    padding-left:15px;
+    font-weight:300;
+   
+}
+
+.color div{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    margin: 2px ;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.color{
+    display: flex;
+    padding: 10px;
+}
+
+.color #blue{
+    background-color: blue;
+}
+
+.color #gray{
+    background-color:gainsboro;
+}
+
+.color #skyblue{
+    background-color: skyblue;
+}
+.color #monster{
+   border: 10px solid black;
+    
+}
+
+.color img{
+    height: 40px;
+    padding-bottom:5px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px 5%;
+        background-position: bottom;
+    }
+
+    .content h1 {
+        font-size: 50px;
+    }
+
+    .content p {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        height: 140vh;
+        background-position:bottom;
+        top: 100px;
+        background-size: 500px;
+    }
+
+    .content h2 {
+        padding-top: 10px;
+        font-size: 15px;
+    }
+
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .content p{
+        font-size: 15px;
+    }
+
+    h3{
+        color:red;
+        font-weight:bold;
+
+    }
+
+    
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container{
+        background-position: bottom;
+       
+        
+    }
+
+    h3{
+        color:red;
+        font-weight:bold;
+
+    }
+    .content p{
+        width: 400px;
+    }
+
+    .content h2{
+       
+        padding-top: 0px;
+     }
+
+     .content h1{
+       
+         padding-top: 0px;
+     }
+
+     h3{
+        padding: 10px;
+    }
+}
+
+@media (min-width: 1024px) and (min-width: 1280px) {
+    .container{
+        background-position:right;
+        background-size: 600px;
+        
+    }
+    .content p{
+        width: 400px;
+    }
+    h3{
+        color:red;
+        font-weight:bold;
+
+    }
+
+}
